@@ -31,6 +31,8 @@ In the case of NGINX, the Ingress controller is deployed in a pod along with the
 
 ```
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+# Nginx has decided to move their product to their Helm repo
+helm repo add nginx-stable https://helm.nginx.com/stable
 helm repo update
 ```
 ## 2. Deploy nginx-ingress using helm chart
